@@ -1,8 +1,27 @@
 # flutter_proxy
 
-device proxy info.
+A plugin to get device proxy info..
 
-## Getting Started
+# Installing
+
+You should add the following to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter_proxy: ^0.0.1
+```
+
+
+# Example
+
+```dart
+final settings = await FlutterProxy.proxySetting;
+bool enabled = settings.enabled;
+String host = settings.host;
+int port = settings.port;
+```
+
+# Getting Started
 
 This project is a starting point for a Flutter
 [plug-in package](https://flutter.dev/developing-packages/),

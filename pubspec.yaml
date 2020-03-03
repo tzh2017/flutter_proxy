@@ -1,8 +1,7 @@
 name: flutter_proxy
-description: device proxy info.
+description: A plugin to get device proxy info.
 version: 0.0.1
-author:
-homepage:
+homepage: https://github.com/tzh-goon/flutter_proxy
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
