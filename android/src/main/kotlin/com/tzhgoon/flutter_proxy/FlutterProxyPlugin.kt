@@ -1,7 +1,5 @@
 package com.tzhgoon.flutter_proxy
 
-import android.support.annotation.NonNull
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
@@ -29,17 +27,17 @@ public class FlutterProxyPlugin : FlutterPlugin, MethodCallHandler {
         mMethodChannel!!.setMethodCallHandler(this)
     }
 
-    override fun onAttachedToEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+    override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
         mMethodChannel = MethodChannel(binding.binaryMessenger, "flutter_proxy")
         mMethodChannel!!.setMethodCallHandler(this)
     }
 
-    override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+    override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
         mMethodChannel!!.setMethodCallHandler(null)
         mMethodChannel = null
     }
 
-    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+    override fun onMethodCall(call: MethodCall, result: Result) {
         if (call.method == "getProxySetting") {
             result.success(getProxySetting())
         } else {
