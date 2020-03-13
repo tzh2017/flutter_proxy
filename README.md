@@ -1,6 +1,6 @@
 # flutter_proxy
 
-A plugin to get device proxy info..
+A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter.  
 
 # Installing
 
@@ -8,7 +8,7 @@ You should add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_proxy: ^0.0.1
+  flutter_proxy: ^0.1.0
 ```
 
 

@@ -2,9 +2,12 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
+/// A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter.
 class FlutterProxy {
+  /// channel
   static const MethodChannel _channel = const MethodChannel('flutter_proxy');
 
+  /// ProxySetting
   static Future<ProxySetting> get proxySetting async {
     return _channel //
         .invokeMapMethod<String, dynamic>('getProxySetting')
@@ -12,15 +15,21 @@ class FlutterProxy {
   }
 }
 
+/// ProxySetting
 class ProxySetting {
+  /// host
   String host;
+
+  /// port
   int port;
 
+  /// private
   ProxySetting._({
     this.host,
     this.port,
   });
 
+  /// private
   factory ProxySetting._fromMap(Map<String, dynamic> map) {
     map ??= {};
     return ProxySetting._(
@@ -31,6 +40,7 @@ class ProxySetting {
     );
   }
 
+  /// enabled
   bool get enabled =>
       (host?.isNotEmpty ?? false) && //
       (port != null && port > 0);
