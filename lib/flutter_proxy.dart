@@ -18,10 +18,10 @@ class FlutterProxy {
 /// ProxySetting
 class ProxySetting {
   /// host
-  String host;
+  String? host;
 
   /// port
-  int port;
+  int? port;
 
   /// private
   ProxySetting._({
@@ -30,7 +30,7 @@ class ProxySetting {
   });
 
   /// private
-  factory ProxySetting._fromMap(Map<String, dynamic> map) {
+  factory ProxySetting._fromMap(Map<String, dynamic>? map) {
     map ??= {};
     return ProxySetting._(
       host: map['host'],
@@ -43,5 +43,5 @@ class ProxySetting {
   /// enabled
   bool get enabled =>
       (host?.isNotEmpty ?? false) && //
-      (port != null && port > 0);
+      (port != null && port! > 0);
 }
