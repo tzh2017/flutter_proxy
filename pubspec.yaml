@@ -23,10 +23,11 @@ flutter:
   # The androidPackage and pluginClass identifiers should not ordinarily
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
-  platforms:
-    android:
-      package: com.tzhgoon.flutter_proxy
-      pluginClass: FlutterProxyPlugin
+  plugin:
+    platforms:
+      android:
+        package: com.tzhgoon.flutter_proxy
+        pluginClass: FlutterProxyPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
