@@ -16,10 +16,10 @@ dependencies:
 
 ## Example
 
-Step 1: make your main()-method async
-Step 2: add WidgetsFlutterBinding.ensureInitialized(); to your async-main()-method
-Step 3: read the proxy settings from the wifi profile natively
-Step 4: if enabled, override the proxy settings with the CustomProxy.
+- Step 1: make your main()-method async
+- Step 2: add WidgetsFlutterBinding.ensureInitialized(); to your async-main()-method
+- Step 3: read the proxy settings from the wifi profile natively
+- Step 4: if enabled, override the proxy settings with the CustomProxy.
 
 ```dart
 void main() async {
