@@ -1,5 +1,13 @@
 ## 0.1.2
 
+* added custom proxy solution。
+
+## 0.1.3
+
+* migration to null-safety。
+
+## 0.1.2
+
 * fix bug。
 
 ## 0.1.0
