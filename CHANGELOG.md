@@ -1,6 +1,6 @@
-## 0.1.6
+## 0.1.7
 
-* add travis ci as quality gate。
+* bug fix。
 
 ## 0.1.5
 
