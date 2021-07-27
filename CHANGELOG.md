@@ -1,3 +1,11 @@
+## 0.1.7+19
+
+* bug fix variables。
+
+## 0.1.7+18
+
+* bug fix variables。
+
 ## 0.1.7+17
 
 * bug fi blind files。
