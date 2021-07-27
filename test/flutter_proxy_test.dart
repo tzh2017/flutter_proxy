@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
+import 'package:flutter_proxy/native_proxy_reader.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_proxy/flutter_proxy.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutter_proxy');

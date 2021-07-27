@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_proxy/flutter_proxy.dart';
+import 'package:flutter_proxy/native_proxy_reader.dart';
 
 void main() => runApp(MyApp());
 
