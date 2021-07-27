@@ -1,4 +1,4 @@
-# flutter_proxy
+# native_flutter_proxy
 
 A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter.
 The plugin provides classes to provide the HttpOverrides.global property with a proxy setting.
@@ -10,7 +10,7 @@ You should add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_proxy: ^0.1.7
+  native_flutter_proxy: ^0.1.8
 ```
 
 

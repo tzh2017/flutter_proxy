@@ -1,3 +1,7 @@
+## 0.1.8
+
+* full functional deployment for iOs and android。
+
 ## 0.1.7+21
 
 * bug fix variables。
