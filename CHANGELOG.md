@@ -1,6 +1,10 @@
-## 0.1.7
+## 0.1.7+17
 
-* bug fix。
+* bug fi blind files。
+
+## 0.1.6
+
+* fix bug。
 
 ## 0.1.5
 
