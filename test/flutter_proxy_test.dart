@@ -21,7 +21,7 @@ void main() {
   });
 
   test('getProxySetting', () async {
-    final setting = await FlutterProxy.proxySetting;
+    final setting = await NativeProxyReader.proxySetting;
     expect(setting.enabled, true);
   });
 }

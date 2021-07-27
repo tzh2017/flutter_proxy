@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 /// A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter.
-class FlutterProxy {
+class NativeProxyReader {
   /// channel
   static const MethodChannel _channel = const MethodChannel('flutter_proxy');
 
