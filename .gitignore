@@ -8,5 +8,3 @@ build/
 
 .idea/
 .vscode/
-
-.travis/
