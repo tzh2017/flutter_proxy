@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:flutter/foundation.dart';
 import 'custom_proxy_override.dart';
 
 /// Allows you to set and enable a proxy for your app
