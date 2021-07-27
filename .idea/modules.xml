@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android/flutter_proxy_android.iml" filepath="$PROJECT_DIR$/android/flutter_proxy_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/android/flutter_proxy_example_android.iml" filepath="$PROJECT_DIR$/example/android/flutter_proxy_example_android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/native_custom_proxy.iml" filepath="$PROJECT_DIR$/native_custom_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/native_flutter_proxy.iml" filepath="$PROJECT_DIR$/native_flutter_proxy.iml" />
     </modules>
   </component>
 </project>
