@@ -1,6 +1,6 @@
 name: native_flutter_proxy
 description: A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter. The plugin provides classes to provide the HttpOverrides.global property with a proxy setting. This ensures that the gap of flutter in supporting proxy communication is filled by a convenient solution.
-version: 0.1.5
+version: 0.1.6
 homepage: https://github.com/victorblaess/native_flutter_proxy
 
 environment:
