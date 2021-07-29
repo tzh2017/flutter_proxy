@@ -24,24 +24,25 @@ dependencies:
 ```dart
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-    bool enabled;
-    String host;
-    int port;
 
-    try {
-      ProxySetting settings = await FlutterProxy.proxySetting;
-      enabled = settings.enabled;
-      host = settings.host;
-      port = settings.port;
-    } catch (e) {
-      print(e);
-    }
+  late bool enabled;
+  String? host;
+  int? port;
+  try {
+    ProxySetting settings = await NativeProxyReader.proxySetting;
+    enabled = settings.enabled;
+    host = settings.host;
+    port = settings.port;
+  } catch (e) {
+    print(e);
+  }
+  if (enabled) {
+    final proxy = CustomProxy(ipAddress: host ?? "", port: port);
+    proxy.enable();
+    print("proxy enabled");
+  }
 
-    if (enabled) {
-      final proxy = CustomProxy(ipAddress: host, port: port);
-      proxy.enable();
-      print("proxy enabled");
-    }
+  runApp(MyApp());
 }
 ```
 
