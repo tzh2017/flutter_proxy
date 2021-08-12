@@ -3,7 +3,7 @@ dart:
   - stable
 os:
   - linux
-sudo: false
+# sudo: false #deprecated
 addons:
   apt:
     sources:
@@ -29,7 +29,7 @@ before_deploy:
   - mv ./.travis ../ # moving this out the publication folder as we don't want to publish it.
 deploy:
   provider: script
-  skip_cleanup: true
+# skip_cleanup: true #deprecated
   script: '../.travis/publish.sh'
   on:
     tags: true
