@@ -10,7 +10,7 @@ You should add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  native_flutter_proxy: ^0.1.11
+  native_flutter_proxy: ^0.1.12
 ```
 
 
@@ -25,7 +25,7 @@ dependencies:
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  late bool enabled;
+  bool enabled = false;
   String? host;
   int? port;
   try {
@@ -36,8 +36,8 @@ void main() async {
   } catch (e) {
     print(e);
   }
-  if (enabled) {
-    final proxy = CustomProxy(ipAddress: host ?? "", port: port);
+  if (enabled && host != null) {
+    final proxy = CustomProxy(ipAddress: host, port: port);
     proxy.enable();
     print("proxy enabled");
   }
