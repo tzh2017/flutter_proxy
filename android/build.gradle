@@ -1,4 +1,4 @@
-group 'com.tzhgoon.flutter_proxy'
+group 'com.victorblaess.native_flutter_proxy'
 version '1.0-SNAPSHOT'
 
 buildscript {
