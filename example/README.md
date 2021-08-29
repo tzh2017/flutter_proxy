@@ -1,6 +1,6 @@
-# flutter_proxy_example
+# example
 
-Demonstrates how to use the flutter_proxy plugin.
+A new Flutter project.
 
 ## Getting Started
 

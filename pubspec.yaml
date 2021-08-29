@@ -1,10 +1,11 @@
-name: flutter_proxy
-description: A flutter plugin to read network proxy info from native. It can be used to set up the network proxy for flutter.  
-version: 0.1.2
-homepage: https://github.com/tzh-goon/flutter_proxy
+name: native_flutter_proxy
+description: A flutter plugin to read and set network proxy info from native.
+version: 0.1.13
+homepage: https://github.com/victorblaess/native_flutter_proxy
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.12.0"
 
 dependencies:
   flutter:
@@ -24,8 +25,12 @@ flutter:
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    androidPackage: com.tzhgoon.flutter_proxy
-    pluginClass: FlutterProxyPlugin
+    platforms:
+      android:
+        package: com.tzhgoon.flutter_proxy
+        pluginClass: FlutterProxyPlugin
+      ios:
+        pluginClass: FlutterProxyPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

@@ -1,11 +1,19 @@
-## 0.1.2
+## 0.1.13
 
-* fix bug。
+* dartfrmt fix。
 
-## 0.1.0
+## 0.1.12
 
-* Add Description。
+* bug fix。
 
-## 0.0.1
+## 0.1.11
 
-* Support get device proxy。
+* added example and enhanced null-safety on proxy set。
+
+## 0.1.10
+
+* enhance readme。
+
+## 0.1.9
+
+* add example。
