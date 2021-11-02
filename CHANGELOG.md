@@ -1,3 +1,7 @@
+## 0.1.14
+
+* fix MissingPluginException on Android。
+
 ## 0.1.13
 
 * dartfrmt fix。
