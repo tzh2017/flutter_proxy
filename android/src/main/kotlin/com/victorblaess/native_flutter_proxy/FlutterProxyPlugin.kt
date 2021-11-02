@@ -1,4 +1,4 @@
-package com.tzhgoon.flutter_proxy
+package com.victorblaess.native_flutter_proxy
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.BinaryMessenger
@@ -23,12 +23,12 @@ public class FlutterProxyPlugin : FlutterPlugin, MethodCallHandler {
     }
 
     private fun onAttachedToEngine(messenger: BinaryMessenger) {
-        mMethodChannel = MethodChannel(messenger, "flutter_proxy")
+        mMethodChannel = MethodChannel(messenger, "native_flutter_proxy")
         mMethodChannel!!.setMethodCallHandler(this)
     }
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-        mMethodChannel = MethodChannel(binding.binaryMessenger, "flutter_proxy")
+        mMethodChannel = MethodChannel(binding.binaryMessenger, "native_flutter_proxy")
         mMethodChannel!!.setMethodCallHandler(this)
     }
 
